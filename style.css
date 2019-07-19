@@ -1,0 +1,276 @@
+/* CSS files add styling rules to your content */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif; 
+  /* background-color: #4ad4aa; */
+}
+
+body {
+/*   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif; */
+font-family: 'Playfair Display', serif;
+  margin: 2em;
+/*   background-img: url("https://media0.giphy.com/media/yTrcALesdjU5O/giphy.gif?cid=790b76115d2f89f050634d3445d1a884&rid=giphy.gif");
+   no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+  back
+}
+
+h2 {
+  color: #FCFCFC;
+  font-family: 'Playfair Display', serif;
+}
+
+.web-title {
+  background-color: #b1d14f;
+  padding: 10px;
+  width: 600px;
+  margin-top: 10px;
+  margin-left: 420px;
+  font-family: 'Playfair Display', serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#hello-world {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+}
+
+.titles {
+  background-color: #add4f0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  width: 300px;
+  color: white;
+}
+
+h1 {
+  color: #FCFCFC;
+  font-family: 'Playfair Display', serif;
+}
+
+/* #hw { 
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-color: #373fff;
+} */
+
+#header { 
+  background-color: #40434E;
+  
+}
+
+#leftclick {
+  position: relative;
+  left: -5px;
+  top: -200px;
+}
+
+#rightclick {
+  position: relative;
+  right: -620px;
+  top: -200px
+}
+
+.articles {
+  padding-left: 370px;
+  padding-top: 200px;
+  font-family: 'Playfair Display', serif;
+  margin-top: 110px;
+}
+
+#news {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+}
+
+.articleImg1 {
+  height: 400px;
+  width: 700px;
+}
+
+.articleImg2 {
+  height: 400px;
+  width: 700px;
+}
+
+.theheader {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+  margin: 15px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #7BB2D9;
+}
+
+/* selected link */
+a:active {
+  color: #243010;
+}
+  
+  .articles, button {
+    position: absolute;
+    top: 50%;
+  }
+
+.mySlides {display:none;}
+
+  
+#about { 
+  font-family: 'Playfair Display', serif;
+}
+.images{
+  margin-bottom: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutpics { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  padding: 5px;
+  display: inline-block;
+/*   justify-content: space-around; */
+/*   margin-left: 35px; */
+  margin-right: auto;
+  border-radius: 50%;
+  }
+
+.aboutus { 
+  position: relative;
+  top: 500px;
+}
+
+.overlay {
+  padding: 5px;
+  margin-left: 25px;
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  height: 100%;
+  width: 30%;
+  opacity: 0;
+  transition: .5s ease; 
+  background-color: #008CBA;
+  border-radius: 90%;
+}
+
+.overlay2 {
+  padding: 5px;
+  margin-left: 500px;
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  height: 100%;
+  width: 30%;
+  opacity: 0;
+  transition: .5s ease; 
+  background-color: #008CBA;
+  border-radius: 90%;
+}
+.overlay3 {
+  padding: 5px;
+  margin-left: 985px;
+  margin-right: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  height: 100%;
+  width: 30%;
+  opacity: 0;
+  transition: .5s ease; 
+  background-color: #008CBA;
+  border-radius: 90%;
+}
+.catherine, .gabby, .kim{
+  width:30%;
+  height:30%;
+}
+
+.catherine:hover .overlay{ 
+  opacity: 1;
+}
+.gabby:hover .overlay2{ 
+  opacity: 1;
+}
+.kim:hover .overlay3 { 
+  opacity: 1;
+}
+
+.abouttext {
+  color: white; 
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  position: absolute; 
+  top: 50%;
+  left: 50%; 
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+.about { 
+font-family: 'Playfair Display', serif;
+}
+
+.why { 
+background-color: #40434E;
+font-family: 'Playfair Display', serif;
+margin-top: 40%;
+font-style: normal;
+}
+
+.whysent {
+font-family: 'Playfair Display', serif;
+padding: 20px;
+color: white;
+font-size: 20px;
+font-style: normal;
+margin-bottom: 20px;
+}
+
+.video-background { 
+  background: black;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0; 
+  z-index: -99;
+}
+
+.video-foreground, .video-background iframe { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  pointer-events: none;
+}

@@ -1,0 +1,246 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trash sorter</title>
+    <link rel="stylesheet" href="trash-sorter.css">
+    <link href = "https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    	<script> 
+			function allowDrop(ev) { 
+				ev.preventDefault(); 
+			} 
+			
+			function dragStart(ev) { 
+				ev.dataTransfer.setData("text", ev.target.id); 
+			} 
+			
+			function dragDrop(ev) { 
+				ev.preventDefault(); 
+				var data = ev.dataTransfer.getData("text"); 
+				ev.target.appendChild(document.getElementById(data)); 
+			} 
+		</script> 
+		<style> 
+
+    
+			.container { 
+				width: 100px; 
+				height: 100px; 
+				padding: 10px; 
+			} 
+			p { 
+				font-size:20px; 
+				font-weight:bold; 
+			} 
+      .trash {
+        display: flex;
+/*         flex-direction: row; */
+      }
+      
+      #drag1 {
+        width: 80px;
+      }
+
+      #div1 {
+        background-color: #679968;
+      }
+
+       #div2 {
+        background-color: #407ab8;
+      }
+
+       #div3 {
+        background-color: #4f4f4f;
+      }
+
+
+		</style> 
+  </head>
+  <body>
+    <div id="header">
+      <div class = "header">
+        <a href="index.html" class="theheader" id="home"> <center> HOME </center> </a>
+        <a href="calculator.html" class="theheader" id="co2"> <center> DAILY CO2 CALCULATOR </center> </a>
+        <a href="trash-sorter.html" class="theheader" id="sorter"> <center> TRASH SORTER </center> </a> 
+         <a href="about.html" class="theheader"> <center> ABOUT </center> </a>
+      </div>
+    </div>
+   
+      <br>
+      <br>
+      <h1 id="belong">Where does your trash belong?</h1>
+      <br>
+      
+      <div id="trash">
+        <div id="trash-pics">
+          <img id="compost" src="https://cdn.glitch.com/0ba24fc6-7307-4602-9375-068b47861f35%2Fcompost.PNG?v=1563530843100" alt="compost">
+          <img id="recycle" src="https://cdn.glitch.com/0ba24fc6-7307-4602-9375-068b47861f35%2Frecycle.PNG?v=1563530842149" alt="recycle">
+          <img id="landfill" src="https://cdn.glitch.com/0ba24fc6-7307-4602-9375-068b47861f35%2Flandfill.PNG?v=1563530841869" alt="landfill">
+        </div>
+        
+        <div class="trash-titles">
+          <div id = "trash-title1">
+          <h2> Compost </h2>
+          </div>
+          <div id = "trash-title2">
+          <h2> Recycle </h2>
+          </div>
+          <div id = "trash-title3">
+          <h2> Landfill </h2>
+          </div>
+        </div>
+        
+        <div id="trash-info">
+          
+          <ul class="compost" id="shift1"> 
+            <li> Food scraps </li>
+            <li> Food containers </li>
+            <li> Dirty paper </li>
+            <li> Yard trimmings </li>
+            <li> Organic Materials </li>
+            <li> Compostable containers </li>
+          </ul>
+       
+          
+          <ul class="recycle" id="shift2"> 
+            <li> Paper </li>
+            <li> Cardboard </li>
+            <li> Metal </li>
+            <li> Plastic </li>
+            <li> Glass </li>
+            <li> Cartons </li>
+            <li> Fabric </li>
+          </ul>
+          
+          <ul class="landfill" id="shift3"> 
+            <li> Styrofoam </li>
+            <li> Pet poop </li>
+            <li> Light bulbs </li>
+            <li> Toothpaste tubes </li>
+            <li> Sanitary </li>
+            <li> Diapers </li>
+            <li> Disposable plastic </li>
+            <li> Shiny food wrapers </li>
+            <li> Broken glass and pottery </li>
+
+          </ul>
+        
+    </div>
+        </div>
+    
+      <br>
+    
+<!--        <center>
+          <img id="drag1" src="https://cdn.glitch.com/0ba24fc6-7307-4602-9375-068b47861f35%2Fcrumpled-paper.png?v=1563533885141" draggable="true"
+          ondragstart="dragStart(event)">
+        </center>
+        <div class="trash">
+          <div id="div1" class="container" ondrop="dragDrop(event)" ondragover="allowDrop(event)"> </div> 
+          <div id="div2" class="container" ondrop="dragDrop(event)" ondragover="allowDrop(event)"> </div> 
+          <div id="div3" class="container" ondrop="dragDrop(event)" ondragover="allowDrop(event)"> </div> 
+        </div>  -->
+      
+      <br>
+      <a href="https://sfrecycles.org/">
+         Source
+      </a>
+    <center>
+      <div class="gifspace">
+      <div class="title">
+        <br>
+        <h1> Can you sort through the trash? </h1>
+        <h3> Drag and drop the trash into the box that matches its bin color. </h3> 
+        <h5> Ex. If it belongs in the compost bin, drag and drop the image in the green bin.)</h5>
+        <br>
+        <h2>Score: <text id="score001">0</text></h2>
+      </div>
+      
+      <br>
+      <button class="button" onclick="submit001()" id="button1">Done</button>
+      <button class="button" onclick="changeTrash()" id="button2"> Change trash</button>
+            
+
+    
+      <p id="message001"> </p>
+      
+      <br>
+      <div class="row">
+        
+        <div class="box001" ondrop="drop006(event)" ondragover="allowDrop001(event)" id="place001" >Compost</div>
+
+        <div class="box001" ondrop="drop007(event)" ondragover="allowDrop002(event)" id="place002"> Recycling </div>
+
+        <div class="box001" ondrop="drop008(event)" ondragover="allowDrop003(event)" id="place003">Landfill</div>
+        
+      </div>
+      
+        <div class="row">
+          <div class="box002" ondrop="drop002(event)" id="recycle-img">
+              <img class="draggable-trash" src="https://cdn.glitch.com/0ba24fc6-7307-4602-9375-068b47861f35%2Fcrumpled-paper.png?v=1563533885141" ondragstart="dragStart002(event)" draggable="true" id="target002">
+          </div>
+
+          <div class="box002" ondrop="drop003(event)" id="landfill-img">
+              <img class="draggable-trash" src="https://cdn.glitch.com/0ba24fc6-7307-4602-9375-068b47861f35%2Fchips.png?v=1563537101491" ondragstart="dragStart003(event)" draggable="true" id="target003">
+          </div>
+
+          <div class="box002" ondrop="drop001(event)" id="compost-img">
+            <img class="draggable-trash" src="https://cdn.glitch.com/0ba24fc6-7307-4602-9375-068b47861f35%2Fpotato.png?v=1563537057669" ondragstart="dragStart001(event)" draggable="true" id="target001">
+          </div>
+        </div>
+
+    
+   
+      <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <br>
+            <br>
+            <br>
+            <br>
+        <br>
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <br>
+<!--     you add all these breaks because you're stretching the div. when you do object-fit cover it wants the image to stay int he div so it's not going to make it too big.  -->
+<!--         adding all these divs make it so that the image can fill the whole thing  -->
+     </div> </center> 
+    
+  <div class="extrafacts">
+    <br>
+    <br>
+    <center> <a href= "https://sciencing.com/effects-not-recycling-4827369.html"> <h1 id="read"> What Happens If We Don't Recycle? </h1>  
+        </a>
+    </center>
+  
+        <br> 
+    <br>
+    <br> 
+    <br>
+    <br> 
+    <br>
+    <br> 
+    <br>
+    <br> 
+    <br> 
+    <br>
+    <br> 
+    <br>
+    <br> 
+    <br>
+  </div>
+      
+  <script src="trash-sorter.js"></script>   
+  </body>
+</html>

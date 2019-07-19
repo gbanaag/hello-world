@@ -1,0 +1,328 @@
+/* CSS files add styling rules to your content */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif; 
+  /* background-color: #4ad4aa; */
+}
+
+body {
+/*   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif; */
+  /*font-family: 'Playfair Display', serif;
+  margin: 2em;
+/*   background-img: url("https://media0.giphy.com/media/yTrcALesdjU5O/giphy.gif?cid=790b76115d2f89f050634d3445d1a884&rid=giphy.gif");
+   no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+/*   back */
+
+}
+
+#belong { 
+  display: flex;
+  justify-content: center;
+  font-size: 600%;
+}
+
+.web-title {
+  background-color: #40434E;
+  padding: 10px;
+  margin-left: 600px;
+  margin-right: 600px;
+  margin-top: 10px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+/* #hw { 
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-color: #373fff;
+} */
+
+#header { 
+  background-color: #40434E;
+  
+}
+
+#leftclick {
+  position: relative;
+  left: -5px;
+  top: -200px;
+}
+
+#rightclick {
+  position: relative;
+  right: -620px;
+  top: -200px
+}
+
+.articles {
+  padding-left: 370px;
+  padding-top: 200px;
+}
+
+/* #news {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+} */
+.articleImg1 {
+  height: 400px;
+  width: 700px;
+}
+
+.articleImg2 {
+  height: 400px;
+  width: 700px;
+}
+
+.theheader {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: white;
+  display: inline-block;
+  margin: 15px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #7BB2D9;
+}
+
+/* selected link */
+a:active {
+  color: #243010;
+}
+
+
+#trash-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+#trash-pics {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#shift1 {
+  background-color: #87A330;
+height: 250px;
+  width: 350px;
+  padding: 30px;
+  font-size: 150%;
+  margin-top: 15px;
+  margin-left: 130px;
+  
+}
+#shift2 {
+  background-color: #87A330;
+  padding: 40px;
+  font-size: 150%;
+  margin-top: 15px;
+}
+#shift3 {
+  background-color: #87A330;
+  padding: 20px;
+  padding-left: 30px;
+  font-size: 150%;
+  margin-top: 15px;
+  margin-right: 150px;
+}
+#compost {
+  width: 25%;
+}
+
+#crisis { 
+  padding-left: 100px;
+}
+
+#recycle {
+  width: 25%;
+}
+
+#landfill {
+  width: 25%;
+}
+
+#compost:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#recycle:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#landfill:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.trash-titles {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+    justify-content: space-around;
+}
+#trash-title1 {
+  font-size: 200%;
+  background-color: #7BB2D9;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-right: -320px;
+}
+#trash-title2 {
+  font-size: 200%;
+  background-color: #7BB2D9;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-right: -310px;
+}
+#trash-title3 {
+  font-size: 200%;
+  background-color: #7BB2D9;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+
+/* .shift1 {
+  margin-left: 300px;
+} */
+
+/* li {
+  margin-left: 90px;
+  margin-right: 90px;
+} */
+
+ #place001 {
+            width: 200px;
+            height: 200px;
+            margin: 12px;
+            padding: 80px;
+   padding-left: 50px;
+            background-color: #679968;
+   font-size: 150%;
+            opacity: 1;
+           }
+
+           #place002 {
+            width: 200px;
+            height: 200px;
+            margin: 12px;
+            padding: 10px;
+            background-color: #407ab8;
+             font-size: 150%;
+             padding: 80px;
+             padding-left: 50px;
+             opacity: 1;
+           }
+
+           #place003 {
+            width: 200px;
+            height: 200px;
+            margin: 12px;
+            padding: 10px;
+            background-color: #4f4f4f;
+             font-size: 150%;
+             padding: 80px;
+             padding-left: 60px;
+             opacity: 1;
+           }
+
+.draggable-trash {
+  width: 100px;
+  opacity: 1;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.title {
+  background-color: #ebebeb;
+  width: 600px;
+  height: 175px;
+  
+}
+
+#button1 {
+  background-color: #FDB833;
+;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.75;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#button2{
+  background-color:#CE2D4F;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.75;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gifspace {
+  background-image: url("https://cdn.glitch.com/0ba24fc6-7307-4602-9375-068b47861f35%2Frrr.gif?v=1563552670071");
+  background-size: cover;
+/*   height: 110%; */
+  width: 80%;
+  padding: 0;
+  object-fit: cover;
+  opacity: 0.65;
+}
+
+/* class isn't working smh */
+#button1:hover {opacity: 1}
+#button2:hover {opacity: 1}
+
+.extrafacts { 
+  background-image: url("https://media.giphy.com/media/3o72EY7GdCzCNYi8QU/giphy.gif");
+  background-size: cover;
+/*   height: 110%; */
+  width: 80%;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+  margin-top: 30px;
+  margin-left: 145px;
+  opacity: 0.6;
+}
+
+#read {
+  color: white;
+  font-size: 100px;
+  opacity: 1;
+}
+
