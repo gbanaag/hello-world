@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> CO2 Calculator </title>
+    <link rel="stylesheet" href="calculator.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <div id="header">
+    <div class = "header">
+    <a href="https://hello-world-c-g-.glitch.me/" class="theheader" id="home"> <center> HOME </center> </a>
+        <a href="calculator.html" class="theheader" id="co2"> <center> DAILY CO2 CALCULATOR </center> </a>
+        <a href="trash-sorter.html" class="theheader" id="sorter"> <center> TRASH SORTER </center> </a> 
+       <a href="about.html" class="theheader"> <center> ABOUT </center> </a>
+      </div>
+    </div>
+
+
+  <form>
+    <div class="calculator">
+      <div class="title">
+        <h1> Carbon Emissions Calculator </h1>
+        <p> Calculate how much carbon dioxide you contribute to the atomsphere on a daily basis! </p>
+        </div>
+
+        <br>
+
+        <div class = "meat-type-question">
+
+        <h2> 1. What type of meat did you eat today?</h2>
+      </div>
+
+      <center><div class = "meat-type-choices1">
+
+         <div class = "chicken">
+          <input name="meat-type" value="chicken" type="radio" id="chicken">
+          <label for="chicken">
+            <img onclick = "setPork()" class = "meat-type-img" id = "chicken-img" src="http://2.bp.blogspot.com/-hvbmwfpqjdQ/TyATwoA8VvI/AAAAAAAApWg/DaALczqwQEE/s1600/DSC_0084.JPG">
+           </label>
+          <div id = "chicken-centered"><strong>Chicken</strong></div>
+        </div>
+
+        <div class = "pork">
+          <input name="meat-type" value="pork" type="radio" id="pork">
+          <label for="pork">
+            <img onclick = "setPork()" class = "meat-type-img" id = "pork-img" src="http://images.media-allrecipes.com/userphotos/960x960/3756614.jpg" type="radio">
+          </label>
+          <div id = "pork-centered"><strong>Pork</strong></div>
+        </div>
+      </div></center>
+
+
+
+      <center><div class = "meat-type-choices2">
+        <div class = "beef">
+          <input name="meat-type" value="geef" type="radio" id="beef">
+          <label for="beef">
+            <img onclick = "setBeef()" class = "meat-type-img" id = "beef-img" src="https://assets3.thrillist.com/v1/image/1695056/size/tmg-article_default_mobile.jpg">
+          </label>
+        <div id = "beef-centered"><strong>Beef</strong></div>
+        </div>
+
+        <div class = "lamb">
+          <input name="meat-type" value="lamb" type="radio" id="lamb">
+          <label for="lamb">
+            <img onclick = "setLamb()" class = "meat-type-img" id = "lamb-img" src="https://s23209.pcdn.co/wp-content/uploads/2019/04/Roasted-Leg-of-LambIMG_8300.jpg">
+          </label>
+          <div id = "lamb-centered"><strong>Lamb</strong></div>
+        </div>
+        </div></center>
+      <br>
+      <br>
+
+     <div class = "meat-amount-question">
+        <h2> 2. How much?</h2>
+      </div>
+      <center><div class = "meat-type-choices1">
+          <button class = "meat-amount-buttons" id = "meat-amount1" type="button"><strong>0-20 grams</strong></button>
+          <button class = "meat-amount-buttons" id = "meat-amount2" type = "button"><strong>20-40 grams</strong></button>
+        </div></center>
+    <center><div class = "meat-type-choices2">
+      <button class = "meat-amount-buttons" id = "meat-amount3" type = "button"><strong>40-60 grams</strong></button>
+      <button class = "meat-amount-buttons" id = "meat-amount4" type = "button"><strong>60-80 grams</strong></button>
+      </div></center>
+
+    <br>
+    <br>
+    <div id = "transport-question">
+        <h2>  3. How did you get to work today? </h2>
+    </div>
+
+      <div id="transport">
+
+           <center>
+            <div id = "transportation1">
+              <div id = "car-img">
+                <input name="transportation" value="car" type="radio" id="car">
+                <label for="car">
+                  <img src="https://cdn.glitch.com/0ba24fc6-7307-4602-9375-068b47861f35%2Fcar.jpeg?v=1563472396848" class="transportation">
+                </label>
+              </div>
+              <div id = "bus-img">
+                <input name="transportation" value="bus" type="radio" id="bus">
+                <label for="bus">
+                <img src="https://cdn.glitch.com/0ba24fc6-7307-4602-9375-068b47861f35%2Fbus.jpeg?v=1563472481321" class="transportation">
+                </label>
+              </div>
+             </div>
+          <div id = "transportation2">
+             <div id = "scooter-img">
+              <input name="transportation" value="scooter" type="radio" id="scooter">
+              <label for="scooter">
+                <img src="https://cdn.glitch.com/0ba24fc6-7307-4602-9375-068b47861f35%2Fscooter.jpg?v=1563475395077" class="transportation">
+              </label>
+             </div>
+             <div id = "train-img">
+              <input name="transportation" value="train" type="radio" id="train">
+              <label for="train">
+                <img src="https://cdn.glitch.com/0ba24fc6-7307-4602-9375-068b47861f35%2Ftrain.jpg?v=1563472557961" class="transportation">
+              </label>
+             </div>
+         </div>
+
+            <div id = "transportation3">
+              <div id = "bike-img">
+                <input name="transportation" value="bike" type="radio" id="bike">
+                <label for="bike">
+                  <img src="https://cdn.glitch.com/0ba24fc6-7307-4602-9375-068b47861f35%2Fbike.jpg?v=1563472624621" class="transportation">
+                </label>
+              </div>
+              <div id = "walk-img">
+              <input name="transportation" value="walk" type="radio" id="walk">
+              <label for="walk">
+                <img src="https://cdn.glitch.com/0ba24fc6-7307-4602-9375-068b47861f35%2Fwalk.jpg?v=1563475104093" class="transportation">
+              </label>
+             </div>
+            </div>
+        </center>
+
+      </div>
+
+    <div id = "transportAmount">
+        <h2>  4. How many miles did you travel? </h2>
+    </div>
+   <center><div id = "miles-input">
+     <input type="text" placeholder="Input your miles here" id="miles" onblur="mileProduct()">
+     <p id="input-example"> (Ex. If you're inputting 32 miles, <br> write "32", not "32 miles") </p>
+     </div>
+     
+     <br>
+     
+       <div id = "water">
+          <h2>  5. Did you use a reusable water bottle today? </h2>
+        </div>
+     <center><div class = "water-choice">
+          <button class = "water-choice-buttons" id = "yes" type="button"><strong>Yes</strong></button>
+          <button class = "water-choice-buttons" id = "no" type = "button"><strong>No</strong></button>
+        </div></center>
+     
+      <div id = "submit-button">
+        <button id = "button"> Submit </button>
+        <!-- <input id = "button" type="submit" onclick="getInput()">  -->
+      </div>
+
+    </center>
+      <br>
+      <br>
+      <br>
+      <center>
+        <div class="total">
+          <br><b><h1> Your total is </h1></b>
+          <h1 id = "total">   </h1>
+          <h2 id= "rating"> ...</h2>
+        </div>
+      </center>
+
+    </div>
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+     <script src="calculator.js"></script>
+  </body>
+</html>
